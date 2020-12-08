@@ -1,0 +1,523 @@
+@import 'fonts.css';
+
+:root {
+    --f900: 'Raleway-Black';
+    --f700: 'Raleway-Bold';
+    --f300:  'Raleway-Light';
+    --f400: 'Raleway-Regular';
+    --f100:  'Raleway-Thin';
+    --green:  #69cf17;
+    --green_75:  rgba(106, 207, 23, 0.75);
+    --green_90:  rgba(106, 207, 23, 0.90);
+    --white:  #ffffff;
+    --dark: #0002;
+    --grey: #dedede;
+    --grey_dark: #7a7a7a;
+    --logo_out: #62be19;
+    --logo_in: #4e9f0d;
+    --logo_shadow: rgba(30, 30, 30, 0.15);
+    --col-1: calc(100% /12);
+    --col-2: calc(100% / 12 * 2 );
+    --col-3: calc(100% / 12 * 3 );
+    --col-4: calc(100% / 12 * 4 );
+    --col-5: calc(100% / 12 * 5 );
+    --col-6: calc(100% / 12 * 6 );
+    --col-7: calc(100% / 12 * 7 );
+    --col-8: calc(100% / 12 * 8 );
+    --col-9: calc(100% / 12 * 9 );
+    --col-10: calc(100% / 12 * 10 );
+    --col-11: calc(100% / 12 * 11);
+    --col-12: calc(100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.col-1 {
+    width: var(--col-1);
+    padding:  0 15px;
+}
+
+.col-2 {
+    width: var(--col-2);
+    padding:  0 15px;
+}
+.col-3 {
+    width: var(--col-3);
+    padding:  0 15px;
+}
+
+.col-4 {
+    width: var(--col-4);
+    padding:  0 15px;
+}
+
+.col-5 {
+    width: var(--col-5);
+    padding:  0 15px;
+}
+
+.col-6 {
+    width: var(--col-6);
+    padding:  0 15px;
+}
+
+.col-7 {
+    width: var(--col-7);
+    padding:  0 15px;
+}
+
+.col-8 {
+    width: var(--col-8);
+    padding:  0 15px;
+}
+
+
+.col-9 {
+    width: var(--col-9);
+    padding:  0 15px;
+}
+
+
+.col-10 {
+    width: var(--col-10);
+    padding:  0 15px;
+}
+
+
+.col-11 {
+    width: var(--col-11);
+    padding:  0 15px;
+}
+
+.col-12 {
+    width: var(--col-12);
+    padding:  0 15px;
+}
+
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+.d-flex {
+    display: flex;
+}
+
+
+.justify-content-center {
+    justify-content: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.jastify-content-between {
+    justify-content: space-between;
+}
+
+.mh-100-vh {
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html,body {
+    font-family: var(--f400);
+    background: #060002;
+}
+
+html,body {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--logo_in);
+    padding: 8px 29px 7px;
+    line-height: 17px;
+    border: 3px solid var(--logo_out);
+    border-radius: 5px;
+    font-size: 24px;
+    box-shadow: 5px 5px 5px 0 var(--logo_shadow) inset;
+}
+
+/* .header START */
+
+.header {
+    background: url(../images/bg_img.jpg) no-repeat center /cover;
+    background-attachment: fixed;
+}
+
+.nav_link {
+    color: #69cf17;
+    font-family: var(--f300);
+    line-height: 14px;
+    font-size: 20px;
+    padding: 38px 36px;
+    display: block;
+    transition: color 0.5s, background 0.5s;
+}
+
+.nav_link:hover {
+    color: var(--white);
+    background: var(--green_75);
+}
+
+.header_info {
+    flex-grow: 1;
+}
+
+.heder_info_title {
+    color: var(--green);
+    font-size: 72px;
+    line-height: 51px;
+    margin-bottom: 13px;
+}
+
+.heder_info_subtitle {
+    color: var(--green);
+    font-size: 36px;
+    line-height: 25px;
+    margin-bottom: 36px;
+}
+
+.heder_info_paragraph {
+    color: var(--grey);
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 75px;
+}
+
+.header_price {
+    display: block; 
+    width: max-content;
+
+
+    font-size: 60px;
+    color: var(--white);
+    background: var(--green_75);
+    padding: 23px 94px;
+    font-family: var(--f100);
+    transition: color 0.5s, background 0.5s;
+}
+
+.header_price:hover {
+    opacity: 0.7;
+}
+
+ /* header end */
+ /* ********** */
+ /* main start */
+
+
+ .main-menu_link {
+     color: var(--grey_dark);
+     font-size: 24px;
+     line-height: 22px;
+     display: block;
+     margin-right: 52px;
+ }
+
+ .main-menu_link:hover {
+     color: var(--green);
+     transform: scale(1.2);
+ }
+
+ .main_menu {
+     padding: 69px 0 68px;
+ }
+
+ .add-cart {
+     font-size: 24px;
+     line-height: 18px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     color: white;
+     background: var(--green_90);
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     opacity: 0;
+     transition: 0.5s;
+ }
+
+ .add-cart:hover {
+     opacity: 1;
+ }
+
+ .burger_price {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     color: white;
+     padding: 21px 59px;
+     font-size: 24px;
+     line-height: 18px;
+     background: var(--green_90);
+     transition: 0.5s;
+ }
+
+ .burger_item:hover .burger_price {
+     opacity: 0;
+ }
+
+ .burger_item{
+     position: relative;
+ }
+
+ .burger_item img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+ }
+
+ .burger_title {
+     color: var(--green);
+     margin: 37px  0 18px;
+     font-family: var(--f700);
+     line-height: 17px;
+ }
+
+ .burger_text {
+     color: var(--white);
+     line-height: 24px;
+    margin-bottom: 54px;
+ }
+ 
+ .recipe {
+     background: url(../images/section-bg.jpg) no-repeat center/cover;
+     background-attachment: fixed;
+ }
+
+ .recipe_title {
+     color: var(--green);
+     font-size: 36px;
+     line-height: 29px;
+     text-transform: uppercase;
+     margin-top: 51px;
+ }
+
+ .recipe_title::after {
+     content: '';
+     display: block;
+     width: 87%;
+     background: var(--green);
+     height: 1px;
+     margin: 23px auto 50px;
+ }
+
+ .recipe_text {
+     color: var(--white);
+     font-size: 18px;
+     line-height: 24px;
+ }
+
+ .recipe_text:last-of-type {
+     margin: 23px 0 173px;
+ }
+
+ .map_title {
+     color: var(--green);
+     background: var(--white);
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 36px;
+     line-height: 26px;
+     padding: 51px 0 57px;
+ }
+
+ .map iframe {
+     display: block;
+ }
+ /* main end */
+ /* footer start */
+    .footer {
+        padding: 40px 0 50px;
+    }
+
+    .phone {
+        font-size: 24px;
+        line-height: 21px;
+        color: var(--green);
+        font-family: var(--f700);
+    }
+
+    .footer_menu {
+        justify-content: space-around;
+        margin: 41px auto 51px;
+    }
+
+    .footer-menu_link {
+        font-family: var(--f100);
+        color: #ffffff;
+        line-height: 17px;
+        margin: 0 15px;
+        transition: color 0.5s;
+    }
+
+    .footer-menu_link:hover {
+        flex-direction: column;
+    }
+
+    .copyright {
+        color: var(--white);
+        font-family: var(--f300);
+        text-align: center;
+
+    }
+
+    .arrow {
+        color: #222222;
+        font-size: 30px;
+        font-weight: 900;
+        background: var(--green);
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+
+
+
+/* footer end */
+ /* media start */
+
+ @media(max-width: 930px) {
+    .footer_menu {
+        width: var(--col-12);
+    }
+ }
+
+ @media(max-width: 800px){
+    .burger {
+        width: var(--col-6);
+    }
+
+
+}
+     @media(max-width: 777px) {
+         .nav {
+             flex-direction: column;
+         }
+         .main-menu_link {
+             margin: 10px;
+         }
+ 
+         .main_menu {
+            justify-content: center;
+         }
+
+         .nav {
+            font-display: column;
+        }
+     }
+
+     @media(max-width: 620px) {
+        .heder_info_title {
+            line-height: 70px;
+            text-align: center;
+        }
+
+        .header_menu {
+            display: none;
+        }
+
+        .heder_info_subtitle {
+            text-align: center;
+        }
+
+        .header_price {
+            padding: 15px 50px;
+            font-size: 40px;
+            margin: auto;
+        }
+
+        .footer-menu_link {
+            margin-bottom: 15px;
+            display: block;
+        }
+    }
+
+    @media(max-width: 460px){
+        .burger {
+            width: var(--col-12);
+        }
+
+    }
+
+    @media(max-width: 430px){
+        .header-info_title {
+            font-size: 25px;
+            left: 40px;
+            margin-top: 10px;
+        }
+
+        .header-info_subtitle {
+            font-size: 25px;
+            line-height: 25px;
+        }
+
+        .header-info_text {
+            text-align: center;
+        }
+
+        .recipe {
+            text-align: center;
+        }
+
+        .recipe_title {
+            line-height: 40px;
+        }
+
+        .footer_contacts {
+            flex-direction: column;
+        }
+
+        .phone {
+            margin: 20px;
+        }
+    }
+    
+
+    
+
+    
+
+ /* media end */
